@@ -1,4 +1,4 @@
-# Decentralized Star Notary Service - Starter Code
+# Decentralized Star Notary Service
 
 This applications allows to register Star using a unique identifier.
 
