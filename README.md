@@ -8,7 +8,33 @@ This applications allows to register Star using a unique identifier.
 
 This is a simple Decentralized Application which is deployed on **Rinkeby** Ethereum network.
 
+### How to use it
+
+## Installation
+
+1) Install Node.js
+2) Install dependencies for Truffle HD Wallet
+  ```
+   npm install truffle-hdwallet-provider
+  ```
+## How to run it
+
+3) Change to the **app** folder and run the web application with the command below:
+
+```
+npm install
+```
+```
+npm run dev
+```
+
+The application will indicate in which URL can be accessed.
+
+4) Open the browser and make sure you are connected to **Rinkeby** Testnet network on Metamask and that you have enough balance to star registering Stars.
+
 The TokenId Smart Contract was based in the standard ERC-721 for non fungible tokens.
+
+**Where to find the contract**
 
 The contract can be seen on Etherscan website with the link below:
 
