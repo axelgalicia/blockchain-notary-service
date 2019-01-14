@@ -42,13 +42,19 @@ contract StarNotary is ERC721 {
         return true;
     }
 
-// Add a function called exchangeStars, so 2 users can exchange their star tokens...
-//Do not worry about the price, just write code to exchange stars between users.
+    function lookUptokenIdToStarInfo(uint256 _tokenId) public view returns(string memory) {
+        return tokenIdToStarInfo[_tokenId];
+    }
 
-//
+    function exchangeStars(address user1, uint256 _tokenId1, address user2, uint256 _tokenId2) public returns (bool) {
+        _transferFrom(user1, user2, _tokenId1);
+        _transferFrom(user2, user1, _tokenId2);
+        return true;
+    } 
 
-// Write a function to Transfer a Star. The function should transfer a star from the address of the caller.
-// The function should accept 2 arguments, the address to transfer the star to, and the token ID of the star.
-//
+    function transferStar(address _to, uint256 _tokenId) public returns (bool) {
+        safeTransferFrom(msg.sender, _to, _tokenId, "");
+        return true;
+    } 
 
 }
