@@ -30,8 +30,7 @@ https://rinkeby.etherscan.io/token/0xb168971b0aa7c4e12bfbe64b91b059b1e227ada2
 
 ### Snapshot
 
-![Creating a new star]
-(https://github.com/axelgalicia/blockchain-notary-service/blob/master/images/screenshot1.jpg)
+![Creating a new star](https://github.com/axelgalicia/blockchain-notary-service/blob/master/images/screenshot1.jpg)
 
 ## Frameworks and tools used on this application:
     
