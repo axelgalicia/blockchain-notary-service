@@ -197,7 +197,7 @@ contract ERC721 is ERC165, IERC721 {
      */
     function _mint(address to, uint256 tokenId) internal {
         require(to != address(0));
-        require(!_exists(tokenId));
+        require(!_exists(tokenId), "The Token already exist");
 
         _tokenOwner[tokenId] = to;
         _ownedTokensCount[to] = _ownedTokensCount[to].add(1);

@@ -1,4 +1,3 @@
-
 const StarNotary = artifacts.require('StarNotary')
 
 let instance;

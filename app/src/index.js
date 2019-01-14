@@ -1,5 +1,8 @@
 import Web3 from "web3";
 import starNotaryArtifact from "../../build/contracts/StarNotary.json";
+// Import the page's CSS. Webpack will know what to do with it.
+import '../styles/app.css';
+
 
 const App = {
   web3: null,
@@ -34,13 +37,25 @@ const App = {
 
 
   createStar: async function () {
-    console.log('CREATING STAR')
+    App.setStatus("Creating star...");
     const { createStar } = this.starContract.methods;
     const name = document.getElementById("starName").value;
     const id = document.getElementById("starId").value;
-    console.log(name, id)
-    await createStar(name, id).send({ from: this.account });
+    const newStar = await createStar(name, id).send({ from: this.account });
     App.setStatus("New Star Owner is " + this.account + ".");
+  },
+
+  lookupStar: async function () {
+    App.setStatus("Searching star...");
+    const { lookUptokenIdToStarInfo } = this.starContract.methods;
+    const id = document.getElementById("tokenId").value;
+    const starInfo = await lookUptokenIdToStarInfo(id).call({ from: this.account });
+    if (!!starInfo) {
+      App.setStatus("The star name is: " + starInfo);
+    } else {
+      App.setStatus("The star with that ID does not exist");
+    }
+
   }
 
 
