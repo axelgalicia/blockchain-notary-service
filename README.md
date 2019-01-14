@@ -1,6 +1,6 @@
 # Decentralized Star Notary Service
 
-This applications allows to register Star using a unique identifier.
+This applications allows to register Stars using a unique identifier.
 
 - Users can register its own Stars by providing the name of the star and the ID.
 
@@ -13,11 +13,22 @@ This is a simple Decentralized Application which is deployed on **Rinkeby** Ethe
 ## Installation
 
 1) Install Node.js
-2) Install dependencies for Truffle HD Wallet
+2) Install truffle
+```
+npm install -g truffle
+```
+2) Clone this repository and Install dependencies for Truffle HD Wallet
   ```
    npm install truffle-hdwallet-provider
   ```
-## How to run it
+3) You can run the tests by using this command (Optional)
+```
+truffle develop
+```
+```
+truffle(develop): test
+```
+## How to run the webapp
 
 3) Change to the **app** folder and run the web application with the command below:
 
