@@ -110,7 +110,7 @@ contract('StarNotary', async (accs) => {
         const user2 = accounts[2];
         const starId1 = 30;
         await instance.createStar('My Star 30', starId1, { from: user1 });
-        await instance.transferStar(user2, starId1, { from: user1 });
+        await instance.transfer(user2, starId1, { from: user1 });
         const ownerToken1 = await instance.ownerOf(starId1);
         assert.equal(ownerToken1, user2);
 

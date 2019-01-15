@@ -50,10 +50,10 @@ The TokenId Smart Contract was based in the standard ERC-721 for non fungible to
 The contract can be seen on Etherscan website with the link below:
 
 Contract:
-https://rinkeby.etherscan.io/address/0xb168971B0AA7c4e12Bfbe64B91B059b1E227Ada2
+https://rinkeby.etherscan.io/address/0xD75c20B20Ca9E6B6A00b5a0F4425e40fa0063C74
 
 Token:
-https://rinkeby.etherscan.io/token/0xb168971b0aa7c4e12bfbe64b91b059b1e227ada2
+https://rinkeby.etherscan.io/token/0xd75c20b20ca9e6b6a00b5a0f4425e40fa0063c74
 
 
 
@@ -62,7 +62,29 @@ https://rinkeby.etherscan.io/token/0xb168971b0aa7c4e12bfbe64b91b059b1e227ada2
 - ERC-721 Token Symbol
     - ```STO```
 - Token Address on the rinkeby Network
-     **0xb168971B0AA7c4e12Bfbe64B91B059b1E227Ada2**
+     **0xD75c20B20Ca9E6B6A00b5a0F4425e40fa0063C74**
+
+     ```
+     2_initial_migration.js
+
+
+   Replacing 'StarNotary'
+  
+   > transaction hash:    0x7b2133017cf1390d8f1576f3e3c193b4fd5320fa864a00678487f700e08940e5
+   > Blocks: 0            Seconds: 12
+   > contract address:    0xD75c20B20Ca9E6B6A00b5a0F4425e40fa0063C74
+   > account:             0xA3d5B48862A97E24b9De2602494b5dcCf5189e22
+   > balance:             18.678703461
+   > gas used:            2357788
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02357788 ETH
+
+   > Saving artifacts
+  
+   > Total cost:          0.02357788 ETH
+
+   ```
 
 
 ### Snapshot

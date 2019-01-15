@@ -52,7 +52,7 @@ contract StarNotary is ERC721 {
         return true;
     } 
 
-    function transferStar(address _to, uint256 _tokenId) public returns (bool) {
+    function transfer(address _to, uint256 _tokenId) public returns (bool) {
         safeTransferFrom(msg.sender, _to, _tokenId, "");
         return true;
     } 

@@ -1,6 +1,6 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
-const privateKey = "[REPLACE WITH PRIVATE KEY]";
-const infuraAPIKey = "[INFURA API KEY]";
+const privateKey = "FE1843E59D40DD88804C919942DC2CBFD3520425F196973662C73C35B5E633B6";
+const infuraAPIKey = "4a6ad2a45eab4a129b75c9db9f31a383";
 
 
 module.exports = {
